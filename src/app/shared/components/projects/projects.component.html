@@ -1,0 +1,22 @@
+<section id="projects" class="projects-container">
+
+<div class="projects-container_header">
+  <h1 class="projects-container_header-title">MY PROJECTS</h1>
+  <p class="projects-container_header-description">Here you will find information about my most recent projects</p>
+</div>
+
+<div *ngFor="let project of projectsList" class="projects-container_content">
+  <div>
+    <img class="projects-container_content-laptop" src="{{project.img}}" alt="">
+  </div>
+  <div class="projects-container_content-description">
+    <h1 class="projects-container_content-description-title">{{project.projectName}}</h1>
+    <p class="projects-container_content-description-text">{{project.description}}</p>
+    <div class="projects-container_content-description-links">
+      <a target="_blank" href="{{project.gitLink}}" class="projects-container_content-description-links-git"><img class="projects-container_content-description-links-img" src="./../../../../assets/img/aboutMe/GitHub.png" alt=""></a>
+      <a target="_blank" href="{{project.link}}" class="projects-container_content-description-links-link">Visit Demo</a>
+    </div>
+  </div>
+</div>
+
+</section>

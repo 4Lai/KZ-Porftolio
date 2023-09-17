@@ -1,0 +1,56 @@
+<section id="aboutMe" class="about-me-container">
+  <div class="about-me-container_bout">
+    <h1 class="about-me-container_bout-title">ABOUT ME</h1>
+    <p class="about-me-container_bout-text">
+      Here you will find more information about me and my skills
+    </p>
+  </div>
+
+  <div class="about-me-container_content">
+    <div class="about-me-container_content-me">
+      <h1 class="about-me-container_content-me-title">Get to know me!</h1>
+      <p class="about-me-container_content-me-text">
+        I am a front-end developer who started my programming adventure over a
+        year ago. I am a conscientious, hard-working person who likes the
+        challenges that programming provides every day. In my free time, apart
+        from programming, I watch football matches and follow hardware news
+      </p>
+    </div>
+
+    <div class="about-me-container_skills">
+      <h1 class="about-me-container_skills-title">My skills</h1>
+      <div class="about-me-container_skills-wrapper">
+        <p
+          class="about-me-container_skills-wrapper-text"
+          *ngFor="let skill of skillsData"
+        >
+          {{ skill.skill }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-me-container_links">
+    <h1 class="about-me-container_links-title">Links</h1>
+    <div class="about-me-container_links-wrapper">
+      <a
+        class="about-me-container_links-wrapper-link"
+        target="_blank"
+        href="https://github.com/4Lai"
+        ><img
+          class="about-me-container_links-wrapper-img"
+          src="../../../../assets/img/aboutMe/GitHub.png"
+          alt=""
+      /></a>
+      <a
+        class="about-me-container_links-wrapper-link"
+        target="_blank"
+        href="https://www.linkedin.com/in/krystian-zieli%C5%84ski-952186291/"
+        ><img
+          class="about-me-container_links-wrapper-img"
+          src="../../../../assets/img/aboutMe/lnked.png"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</section>

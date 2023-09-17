@@ -1,0 +1,21 @@
+<nav class="navbar-container">
+  <div class="name-container">
+    <span>Zieliński</span>
+  </div>
+
+  <div
+    [ngClass]="{active: isActive === true, noActive: isActive === false && touched === true}"
+    class="elements-container hidden"
+    *ngFor="let el of headerElements"
+  >
+    <a class="elements-container-link" href="#aboutMe">{{ el.aboutMe }}</a>
+    <a class="elements-container-link" href="#projects">{{ el.projects }}</a>
+    <a class="elements-container-link" href="#contact">{{ el.contact }}</a>
+  </div>
+
+  <div #idToButton (click)="onClick()" class="toggleButton">
+    <span class="material-symbols-outlined">
+      {{ isActive === true ? "close" : "menu" }}
+    </span>
+  </div>
+</nav>

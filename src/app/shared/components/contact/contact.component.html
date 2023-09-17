@@ -1,0 +1,36 @@
+<section id="contact" class="contact-container">
+  <div class="contact-container_header">
+    <h1 class="contact-container_header-title">CONTACT</h1>
+    <p class="contact-container_header-text">Feel free to contact me!</p>
+  </div>
+  <div
+    [ngClass]="copyToClipboard === true ? 'visible' : 'hidden'"
+    class="contact-container_clipboard"
+  >
+    <p class="contact-container_clipboard-text">Copied to clipboard!</p>
+  </div>
+  <div class="contact-container_links">
+    <a
+      href="https://www.linkedin.com/in/krystian-zieli%C5%84ski-952186291/"
+      target="_blank"
+      class="contact-container_links-link"
+      ><img
+        class="contact-container_links-img"
+        src="./../../../../assets/img/aboutMe/lnked.png"
+        alt=""
+    /></a>
+    <a href="mailto:kry.zielinski@outlook.com" class="contact-container_links-link"
+      ><img
+        class="contact-container_links-img"
+        src="./../../../../assets/img/contact/mail-142.png"
+        alt=""
+    /></a>
+    <button
+      (click)="onClick('kry.zielinski@outlook.com')"
+      class="contact-container_links-button"
+      value="click to copy"
+    >
+      kry.zielinski@outlook.com
+    </button>
+  </div>
+</section>
