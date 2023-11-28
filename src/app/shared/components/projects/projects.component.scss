@@ -1,5 +1,7 @@
 .projects-container {
-  height: 1200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: fit-content;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -69,7 +71,7 @@
 
 @media (max-width: 600px) {
   .projects-container {
-    height: 1650px;
+    height: fit-content;
     &_content {
       grid-template-columns: auto;
       margin-bottom: 40px;
@@ -86,14 +88,13 @@
 
 @media (min-width: 601px) and (max-width: 1000px) {
   .projects-container {
-    padding-top: 50px;
-    height: 1850px;
+    height: fit-content;
     justify-content: flex-start;
     &_content {
       grid-template-columns: auto;
       margin-bottom: 40px;
       &-laptop {
-        width: 100%;
+        max-width: 85%;
       }
       &-description {
         margin-left: 16px;
@@ -105,8 +106,7 @@
 
 @media (min-width: 1001px) and (max-width: 1400px) {
   .projects-container {
-    padding-top: 50px;
-    height: 1600px;
+    height: fit-content;
     justify-content: flex-start;
     &_content {
       grid-template-columns: auto;
@@ -124,8 +124,7 @@
 }
 @media (min-width: 1401px) and (max-width: 1750px) {
   .projects-container {
-    padding-top: 50px;
-    height: 900px;
+    height: fit-content;
     justify-content: flex-start;
     &_content {
       width: 100%;

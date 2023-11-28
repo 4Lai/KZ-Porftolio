@@ -1,6 +1,6 @@
 .section-container {
   width: 100%;
-  height: calc(100dvh - 75px);
+  height: fit-content;
   &_background {
     background-color: #4c00ff;
     &-deeper {

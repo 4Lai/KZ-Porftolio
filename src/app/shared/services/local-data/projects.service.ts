@@ -9,6 +9,14 @@ export class ProjectsService {
 
   projectsData: Projects[] = [
     {
+      projectName: 'Trivello',
+      img: './../../../../assets/img/projects/trivelloLaptop.png',
+      description:
+        'Travel agency website with features like filtering offers by conditions. User can see details of offers or subscribe to newsletter. ',
+      link: 'https://kztrivello.netlify.app/',
+      gitLink: 'https://github.com/4Lai/Trivello',
+    },
+    {
       projectName: 'NgVal',
       img: './../../../../assets/img/projects/ngValLaptop.png',
       description:
